@@ -19,14 +19,25 @@ const translate = new _translate({
   key: key.translate.key,
 });
 
+// Routers
 router.get('/', (req, res, next) => {
   res.status(404);
   res.render('error', {});
 });
 
 router.post('/linewebhook-dlfkru', (req, res) => {
-  console.log(req.body)
-  res.send('ok')
+  // console.log(JSON.stringify(req.body, undefined, 2));
+  Promise
+    .all(req.body.events.map(handleLineMsgs))
+    .then(
+      (result) => res.json(result)
+    );
 })
+
+function handleLineMsgs(e) {
+  return new Promise(async (resolve, reject) => {
+  })
+}
+
 
 module.exports = router;
