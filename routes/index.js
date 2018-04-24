@@ -7,4 +7,8 @@ router.get('/', (req, res, next) => {
   res.render('error', {});
 });
 
+router.get('/line/usage', (req, res) => {
+  res.render('lineusage')
+})
+
 module.exports = router;
