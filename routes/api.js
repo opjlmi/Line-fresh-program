@@ -6,17 +6,11 @@ const _translate = require('@google-cloud/translate');
 const key = require('../webhookkeys');
 
 // Key Cofigure
-const wit = new _wit.Wit({
-  accessToken: key.witai.key,
-});
-
+const wit = new _wit.Wit({ accessToken: key.witai.key, });
+const translate = new _translate({ key: key.translate.key, });
 const line = new _line.Client({
   channelAccessToken: key.line.channelAccessToken,
   channelSecret: key.line.channelSecret,
-});
-
-const translate = new _translate({
-  key: key.translate.key,
 });
 
 // Routers
