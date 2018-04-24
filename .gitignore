@@ -1,6 +1,8 @@
 # key
 webhookkeys.json
 
+.vscode
+
 # Logs
 logs
 *.log
