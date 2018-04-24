@@ -136,7 +136,7 @@ function handleLineMsgs(e) {
             // Questions about activities
             } else if (rules.includes('activities')) {
               let scenelist = [
-                ['之前因為對 Linux 有興趣', '所以有自費考了一張 RHCE', '大學也因為專題的關係 參與了產學合作', '最近也開了一個部落格', '叫 熊熊好 Code', '有興趣可以到網站上看看', 'http://hellopolarbear.com'],
+                ['因為我希望對 Linux 掌控度更高', '所以在大學期間去考了一張 RHCE', '大學也因為專題的關係', '有參與產學合作到 MakerFaire 參展', '最近也開了一個部落格', '叫 熊熊好 Code', '有興趣可以到網站上看看', 'http://hellopolarbear.com'],
                 ['因為大學的時候開始接觸社群', '基本上很多場大型的研討會(大拜拜)都會出現', '也因為對 Linux 有興趣考了一張 RHCE', '目前也是熊熊好Code的站長', '網站上會發關於程式開發的文章', '有興趣可以去看看', 'http://hellopolarbear.com'],
               ]
               let scene = scenelist[Math.floor(Math.random() * scenelist.length)]
